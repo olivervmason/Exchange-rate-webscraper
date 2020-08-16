@@ -18,6 +18,18 @@ result = requests.get(url)
 soup = bs4.BeautifulSoup(result.text, "lxml")
 
 title = soup.select('title')[0].getText()                # Set title to match the <title> tag on the webpage
-print(title)
 
+'''
+BeautifulSoup selector cheatsheet:
+    soup.select('div')                  - Selects ALL based on tag type 
+    soup.select('#special_id)           - Selects ALL elemments with the named id
+    soup.select('.class_name')           - Select HTML elements by class name
+    soup.select('div element_name')     - Select all instances of element_name within the named div
+    soup.select('div > element_name')   - As above but with nothing in between
+'''
+
+
+aud_to_usd = soup.select('.historicalRateTable-rateHeader')[3].getText()
+
+print(aud_to_usd)
 
