@@ -28,8 +28,46 @@ BeautifulSoup selector cheatsheet:
     soup.select('div > element_name')   - As above but with nothing in between
 '''
 
+# Set the rates to be returned in the terminal:
 
-aud_to_usd = soup.select('.historicalRateTable-rateHeader')[3].getText()
+aud_to_usd = soup.select('.historicalRateTable-rateHeader')[4].getText()
+usd_to_aud = soup.select('.historicalRateTable-rateHeader')[3].getText()
 
-print(aud_to_usd)
+aud_to_nzd = soup.select('.historicalRateTable-rateHeader')[24].getText()
+nzd_to_aud = soup.select('.historicalRateTable-rateHeader')[23].getText()
+
+aud_to_cad = soup.select('.historicalRateTable-rateHeader')[3].getText()
+cad_to_aud = soup.select('.historicalRateTable-rateHeader')[3].getText()
+
+aud_to_jpy = soup.select('.historicalRateTable-rateHeader')[3].getText()
+jpy_to_aud = soup.select('.historicalRateTable-rateHeader')[3].getText()
+
+aud_to_eur = soup.select('.historicalRateTable-rateHeader')[3].getText()
+eur_to_aud = soup.select('.historicalRateTable-rateHeader')[3].getText()
+
+aud_to_rub = soup.select('.historicalRateTable-rateHeader')[3].getText()
+rub_to_aud = soup.select('.historicalRateTable-rateHeader')[3].getText()
+
+aud_to_col = soup.select('.historicalRateTable-rateHeader')[3].getText()
+col_to_aud = soup.select('.historicalRateTable-rateHeader')[3].getText()
+
+
+
+print("aud_to_usd should be 1.3943009086, and is: ", aud_to_usd)           
+print("usd_to_aud should be 0.7172052990, and is: ", usd_to_aud)
+
+print("aud_to_nzd should be 0.9119575285, and is: ", aud_to_nzd)
+print("nzd_to_aud should be 1.0965422936, and is: ", nzd_to_aud)
+
+print("aud_to_jpy should be 0.0130836400, and is: ", aud_to_jpy)
+print("jpy_to_aud should be 76.4313295293, and is: ", jpy_to_aud)
+
+print("aud_to_eur should be 1.6511313406, and is: ", aud_to_eur)
+print("eur_to_aud should be 0.6056453387, and is: ", eur_to_aud)
+
+print("aud_to_rub should be 0.0191310545, and is: ", aud_to_rub)
+print("rub_to_aud should be 52.2710339969, and is: ", rub_to_aud)
+
+print("aud_to_col should be 0.0003675975, and is: ", aud_to_col)
+print("col_to_aud should be 2720.3668401739, and is: ", col_to_aud)
 
