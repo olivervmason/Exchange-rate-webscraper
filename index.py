@@ -30,26 +30,23 @@ BeautifulSoup selector cheatsheet:
 
 # Set the rates to be returned in the terminal:
 
-aud_to_usd = soup.select('.historicalRateTable-rateHeader')[4].getText()
-usd_to_aud = soup.select('.historicalRateTable-rateHeader')[3].getText()
+aud_to_usd = soup.select('.historicalRateTable-rateHeader')[3].getText()
+usd_to_aud = soup.select('.historicalRateTable-rateHeader')[2].getText()
 
-aud_to_nzd = soup.select('.historicalRateTable-rateHeader')[24].getText()
-nzd_to_aud = soup.select('.historicalRateTable-rateHeader')[23].getText()
+aud_to_nzd = soup.select('.historicalRateTable-rateHeader')[25].getText()
+nzd_to_aud = soup.select('.historicalRateTable-rateHeader')[24].getText()
 
-aud_to_cad = soup.select('.historicalRateTable-rateHeader')[3].getText()
-cad_to_aud = soup.select('.historicalRateTable-rateHeader')[3].getText()
+aud_to_jpy = soup.select('.historicalRateTable-rateHeader')[21].getText()
+jpy_to_aud = soup.select('.historicalRateTable-rateHeader')[20].getText()
 
-aud_to_jpy = soup.select('.historicalRateTable-rateHeader')[3].getText()
-jpy_to_aud = soup.select('.historicalRateTable-rateHeader')[3].getText()
+aud_to_eur = soup.select('.historicalRateTable-rateHeader')[5].getText()
+eur_to_aud = soup.select('.historicalRateTable-rateHeader')[4].getText()
 
-aud_to_eur = soup.select('.historicalRateTable-rateHeader')[3].getText()
-eur_to_aud = soup.select('.historicalRateTable-rateHeader')[3].getText()
+aud_to_rub = soup.select('.historicalRateTable-rateHeader')[63].getText()
+rub_to_aud = soup.select('.historicalRateTable-rateHeader')[62].getText()
 
-aud_to_rub = soup.select('.historicalRateTable-rateHeader')[3].getText()
-rub_to_aud = soup.select('.historicalRateTable-rateHeader')[3].getText()
-
-aud_to_col = soup.select('.historicalRateTable-rateHeader')[3].getText()
-col_to_aud = soup.select('.historicalRateTable-rateHeader')[3].getText()
+aud_to_col = soup.select('.historicalRateTable-rateHeader')[79].getText()
+col_to_aud = soup.select('.historicalRateTable-rateHeader')[78].getText()
 
 
 
