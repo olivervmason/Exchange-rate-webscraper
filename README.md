@@ -22,3 +22,8 @@ This app requires the following libraries, installed using the commands listed:
 <li>Requests (pip install requests --user);</li>
 <li>Datetime (pip install lxml --user);</li>
 <li>BeautifulSoup; (pip install bs4 --user);</li>
+
+
+### Result:
+
+<img src="ExampleResult.png">
